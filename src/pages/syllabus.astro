@@ -1,0 +1,424 @@
+---
+import Section from '../components/Section.astro';
+import SubSection from '../components/SubSection.astro';
+import Searchbar from '../components/Searchbar.astro';
+import Image from '../components/Image.astro';
+import Row from '../components/Row.astro';
+import Col from '../components/Col.astro';
+import Layout from '../layouts/Layout.astro';
+import DisplayTable from '../components/DisplayTable.astro';
+import InlineEquation from '../components/InlineEquation.astro';
+import DisplayEquation from '../components/DisplayEquation.astro';
+---
+
+<Layout title="TAM 251 - Spring 25">
+	<SubSection title="Table of contents:"></SubSection>
+    <Row>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold">General Info</p>
+			<ul>
+				<li><a href="#Website">Website</a></li>
+				<li><a href="#Description">Course description</a></li>
+				<li><a href="#Prereq">Prerequisites</a></li>
+				<li><a href="#RefText">Reference text</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold">Grades</p>
+			<ul>
+				<li><a href="#Grading">Grading</a></li>
+				<li><a href="#Discussion">Discussions</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold">Formal Assessment</p>
+			<ul>
+				<li><a href="#OfficeHours">Office Hours</a></li>
+			</ul>
+		</Col>
+		<Col values="6 md-4 lg-3">
+			<p class="mb-0 fw-bold">Contact Info</p>
+			<ul>
+				<li><a href="#Piazza">Online forum</a></li>
+			</ul>
+		</Col>
+	</Row>
+
+	<SubSection id="Lectures" title="Lectures"></SubSection>
+
+	<p class="text-black"><span style="background-color:#FFFF00">Prof. Golecki: MWF, 9-10 AM,&nbsp;</span><a href="http://illinois.edu/map/view?skinId=0&amp;ACTION=MAP&amp;buildingId=34"><u><span style="background-color:#FFFF00">Materials Science &amp; Eng Bld | Room 100</span></u></a></p>
+	
+	<p><a href="https://uofi.box.com/s/g7kf5pmo01pf7yuqfq07wfqppuzcqh76"><u>Lecture Notes</u></a></p>
+	
+	<p><a href="https://mediaspace.illinois.edu/channel/TAM+251+Fall+2024/352535182"><u>Lecture Recordings&#8203;</u></a></p>
+	
+	<SubSection id="Website" title="Website"></SubSection>
+	
+	<p>The official class website is <a href="http://courses.engr.illinois.edu/tam251/">http://courses.engr.illinois.edu/tam251/</a></p>
+	
+	<SubSection id="Description" title="Description"></SubSection>
+	
+	<p>Relationship between internal stresses and deformations produced by external forces acting on deformable bodies, and design principles based on mechanics of solids: normal stresses, shear stresses, and deformations produced by tensile, compressive, torsional, and bending loading of members; beam deflections; elastic energy and impact; multi-dimensional stress states; buckling of columns.</p>
+	
+	<h3><strong>Big Idea:</strong></h3>
+	
+	<p>Solid materials deform and break. The <em>extrinsic</em> relation of force and displacement is governed by <em>intrinsic</em> material measures of stress and strain. The challenge is to connect the <em>extrinsic</em> to the <em>intrinsic</em>.</p>
+	
+	<SubSection id="Prereq" title="Prerequisites"></SubSection>
+	
+	<p>TAM 210 or TAM 211.</p>
+	
+	<SubSection id="RefText" title="Reference texts"></SubSection>
+	
+	<p class="m-0">There is no required textbook for this class. However, theses texts are <strong><em>very</em></strong> useful</p>
+	
+	<ul>
+		<li>R. C. Hibbeler,&nbsp;<em>Mechanics of Materials</em>, 9th edition, Pearson, Prentice Hall, 2014.</li>
+		<li>F. B. Beer, E. R. Johnston, J. T. DeWolf, and D. F. Mazurek,&nbsp;<em>Mechanics of Materials</em>, 7th edition, McGraw-Hill, 2015.</li>
+		<li>R. R. Craig,&nbsp;<em>Mechanics of Materials</em>, 3rd edition, John Wiley &amp; Sons, 2011.</li>
+		<li>S. Timoshenko,&nbsp;<em>History of Strength of Materials</em>, Dover Civil and Mechanical Engineering, 1983.</span></li>
+	</ul>
+	<!-- <SubSection id="TAM2XXPolicies" title="TAM2XXPolicies">TAM 2XX Policies</SubSection>
+	General TAM 2XX course policies may be found at: <a href="
+	http://mechref.engr.illinois.edu/pol/policies.html"> http://mechref.engr.illinois.edu/pol/policies.html</a> -->
+	
+	<SubSection id="Grading" title="Grading"></SubSection>
+	
+	<p style="margin-top:0">The total score for the course is computed with the following weights:</p>
+	
+	<div class="d-flex flex-row">
+		<div class="px-3">
+			<p>Computer-based Quizzes (PraireLearn)</p>
+	<!-- <p style="padding-left: 60px;"><em>Quiz Grade = max([First Try, 1/3*(First Try) + 2/3*(Quiz Retry)]) </em></p> -->
+	
+			<p>Online Homework (PraireLearn)</p>
+			
+			<p>Discussion worksheets</p>
+			
+			<p>Lecture participation (iClicker)</p>
+			
+			<p>Final Exam</p>
+		</div>
+		<div>
+			<p>40%</p>
+			<!-- <p>&nbsp;</p> -->
+			
+			<p>15%</p>
+			
+			<p>10%</p>
+			
+			<p>5%</p>
+			
+			<p>30%</p>
+			</div>
+	</div>
+
+	
+	<p><strong>Retake quizzes:</strong>&nbsp;Optional retake quizzes are available in the week following each first-chance quiz. If you choose to take the retake quiz,&nbsp;the quiz score will be&nbsp;90% of the higher scores + 10% of the lower score (0.9*max(first_chance_score, retake_score)+0.1*min(first_chance_score, retake_score)). If you do not take the first-chance-quiz, then your score will be 90%&nbsp;of the retake score.</p>
+
+	<SubSection title="Final grades"></SubSection>
+
+	<p>The total score&nbsp;<em>s</em>&nbsp;corresponds to final grades as follows.</p>
+
+	<table style="margin-left:auto; margin-right:auto">
+		<tbody>
+			<tr>
+				<td style="padding-left: 10px;">97% &le;&nbsp;<em>s</em>&nbsp;&lt; 100%</td>
+				<td style="padding-left: 10px;">A+</td>
+				<td class="leftSpace" style="padding-left: 50px;">93% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					97%&nbsp;</td>
+				<td style="padding-left: 10px;">A</td>
+				<td class="leftSpace" style="padding-left: 50px;">90% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					93%&nbsp;</td>
+				<td style="padding-left: 10px;">A-</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px;">87% &le;&nbsp;<em>s</em>&nbsp;&lt; 90%</td>
+				<td style="padding-left: 10px;">B+</td>
+				<td class="leftSpace" style="padding-left: 50px;">83% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					87%&nbsp;</td>
+				<td style="padding-left: 10px;">B</td>
+				<td class="leftSpace" style="padding-left: 50px;">80% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					83%&nbsp;</td>
+				<td style="padding-left: 10px;">B-</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px;">77% &le;&nbsp;<em>s</em>&nbsp;&lt; 80%</td>
+				<td style="padding-left: 10px;">C+</td>
+				<td class="leftSpace" style="padding-left: 50px;">73% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					77%&nbsp;</td>
+				<td style="padding-left: 10px;">C</td>
+				<td class="leftSpace" style="padding-left: 50px;">70% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					73%&nbsp;</td>
+				<td style="padding-left: 10px;">C-</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 10px;">67% &le;&nbsp;<em>s</em>&nbsp;&lt; 70%</td>
+				<td style="padding-left: 10px;">D+</td>
+				<td class="leftSpace" style="padding-left: 50px;">63% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					67%&nbsp;</td>
+				<td style="padding-left: 10px;">D</td>
+				<td class="leftSpace" style="padding-left: 50px;">60% &le;&nbsp;<em>s</em>&nbsp;&lt;
+					63%&nbsp;</td>
+				<td style="padding-left: 10px;">D-</td>
+			</tr>
+			<tr>
+				<td
+					style="padding-left: 10px; text-align: left;" >
+					<em>s</em>&nbsp;&lt; 60%</td>
+				<td
+					style="padding-left: 10px;">
+					F&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<SubSection id="Discussion" title="Discussion sections"></SubSection>
+	<!--Help for filling out the  <a href="CATMEinstructions.pdf">CATME</a> survey is here.-->
+	
+	<p>Discussion sections are held <span>according to the schedule below</span>.</p>
+
+	<DisplayTable id="discussion-staffing">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>11-12</th>
+				<td>&nbsp;</td>
+				<td>
+				<p style="margin: 0px;">ADF</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Garrett, Chris</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>12-1</th>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+				<td>
+				<p style="margin: 0px;">ADG</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Max, Alejandra</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>1-2</th>
+				<td>
+				<p style="margin:0;">ADA</p>
+	
+				<p style="margin:0;"><em>TA: Pranto</em></p>
+	
+				<p style="margin:0;"><em>CA: Max, Michael</em></p>
+				</td>
+				<td>
+				<p style="margin: 0px;">ADH</p>
+	
+				<p style="margin: 0px;"><em>TA: Junren</em></p>
+	
+				<p style="margin: 0px;"><em>CA: David, Garrett</em></p>
+				</td>
+			</tr>
+			<tr>
+				<th>2-3</th>
+				<td>
+				<p style="margin:0;">ADB</p>
+	
+				<p style="margin: 0px;"><em>TA: Taewoo</em></p>
+	
+				<p style="margin: 0px;"><em>CA: Michael, Chris</em></p>
+				</td>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+			</tr>
+			<tr>
+				<th>3-4</th>
+				<td>
+				<p style="margin:0;">ADC</p>
+	
+				<p style="margin: 0px;"><em>TA: Zeke</em></p>
+	
+				<p style="margin: 0px;"><em>CA: David, Alejandra</em></p>
+				</td>
+				<td>
+				<p style="margin:0;">&nbsp;</p>
+				</td>
+			</tr>
+			<tr>
+				<th>4-5</th>
+				<td>
+				<p style="margin:0;">ADD</p>
+	
+				<p style="margin: 0px;"><em>TA: Zeke</em></p>
+	
+				<p style="margin: 0px;"><em>CA:&nbsp;David, Garrett</em></p>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</DisplayTable>
+
+	<SubSection id="OfficeHours" title="Office hours"></SubSection>
+
+	<p>Professor Golecki:&nbsp;office hours by appointment.&nbsp;</p>
+
+	<p>Teaching and course assistant: office hours are held in 1043 LuMEB&nbsp;according to the schedule below. Office hours start from the second week on Sept. 3rd.&nbsp;</p>
+
+	<DisplayTable id="office-hour-staffing">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>5-6</th>
+				<td style="text-align: center;">
+				<p>Pranto</p>
+	
+				<p>Max</p>
+	
+				<p>Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Junren</p>
+	
+				<p>Alejandra</p>
+	
+				<p>David</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Taewoo</p>
+	
+				<p>David</p>
+	
+				<p>Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+				<td style="text-align: center;">
+				<p>Zeke</p>
+	
+				<p>Michael</p>
+	
+				<p>Max</p>
+				</td>
+			</tr>
+			<tr>
+				<th>6-7</th>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Pranto</p>
+	
+				<p style="text-align: center;">Max</p>
+	
+				<p style="text-align: center;">Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">David</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Taewoo</p>
+	
+				<p style="text-align: center;">David</p>
+	
+				<p style="text-align: center;">Garrett</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Junren</p>
+	
+				<p style="text-align: center;">Alejandra</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+				<td style="text-align: center;">
+				<p style="text-align: center;">Zeke</p>
+	
+				<p style="text-align: center;">Michael</p>
+				</td>
+			</tr>
+		</tbody>
+	</DisplayTable>
+
+<SubSection id="Piazza" title="Online forum (Campuswire)"></SubSection>
+
+<p>TAs and CAs monitor Campuswire according to the following schedule:</p>
+
+<DisplayTable id="campuswire-staffing">
+	<thead>
+		<tr>
+			
+			<th style="border-right: 0px solid white;">Sunday</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="text-align:center">Pranto</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Taewoo</span></p>
+
+			<p><span style="text-align:center">Garrett</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Junren</span></p>
+
+			<p><span style="text-align:center">Max</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Taewoo</span></p>
+
+			<p><span style="text-align:center">Michael</span></p>
+			</td>
+			<td>
+			<p>Junren</p>
+
+			<p>Alejandra</p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Zeke</span></p>
+
+			<p style="text-align: center;"><span style="text-align:center">David</span></p>
+			</td>
+			<td>
+			<p><span style="text-align:center">Pranto</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</DisplayTable>
+
+</Layout>

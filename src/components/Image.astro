@@ -1,0 +1,32 @@
+---
+const { src, width="5", alt='', id=""} = Astro.props;
+---
+
+<style define:vars={{width}}>
+    .image-block{
+        width: 100%;
+        background-color: white;
+    }
+
+    @media (min-width: 768px){
+        .image-block{
+            width: min(calc(var(--width) / 5 * 100%), 100%);
+        }
+    }
+
+    @media (min-width: 992px){
+        .image-block{
+            width: min(calc(var(--width) / 6 * 100%), 100%);
+        }
+    }
+
+    @media (min-width: 1200px){
+        .image-block{
+            width: min(calc(var(--width) / 7 * 100%), 100%);
+        }
+    }
+</style>
+
+<div class="d-flex flex-column align-items-center image-block p-1" id={id}>
+    <img src={src} class="w-100" alt={alt} id={`${id}-image`}>
+</div>

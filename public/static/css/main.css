@@ -1,0 +1,26 @@
+:root{
+    --illini-orange: #E84A27;
+    --illini-blue: #13294B;
+}
+
+
+.bg-highlight{
+    background-color: #f39539;
+}
+
+.title-orange{
+    color: var(--illini-orange);
+}
+
+ul a{
+    color: var(--bs-text-color);
+}
+
+ul a:hover{
+    color: var(--altgeld-orange);
+}
+
+.themed-text{
+    color: var(--bs-text-body);
+}
+
